@@ -1,0 +1,17 @@
+version: v1.0
+workflows:
+  download_input:
+    type: cwl
+    config:
+      file: cwl/workflow.cwl
+      settings: cwl/config.yaml
+    bindings:
+     - step: /opmflow
+       target:
+         model: docker-opmflow
+models:
+  docker-opmflow:
+    type: docker
+    config:
+      image: openporousmedia/opmreleases:latest
+      rm: false
