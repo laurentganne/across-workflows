@@ -3,10 +3,10 @@ class: Workflow
 inputs:
   dataset_url: string
   dataset_name: string
-  input_deck_name: string
+  input_deck: string
 outputs:
-  result:
-    type: File
+  results:
+    type: File[]
     outputSource: opmflow/flow_output
 steps:
   download:
@@ -56,15 +56,27 @@ steps:
     run:
       class: CommandLineTool
       baseCommand: ['flow']
-      stdout: flow_output.log
+      requirements:
+        InitialWorkDirRequirement:
+          listing:          
+            - $(inputs.input_files)
+      stdout: output_flow.log
+      arguments:
+        - position: 1
+          valueFrom: '--output-dir=$(runtime.outdir)/output'
+        - position: 2
+          valueFrom: '$(runtime.outdir)/$(inputs.input_deck_path)'
       inputs:
         input_files:
           type: File[]
-          inputBinding:
-            position: 0
+        input_deck_path:
+          type: string
       outputs:
         flow_output:
-          type: stdout
+          type: File[]
+          outputBinding:  
+              glob: "output*"
     in:
       input_files: unzip/unzipped_files
+      input_deck_path: input_deck
     out: [flow_output]

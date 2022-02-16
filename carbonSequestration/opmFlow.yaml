@@ -14,4 +14,4 @@ models:
     type: docker
     config:
       image: openporousmedia/opmreleases:latest
-      rm: false
+      #rm: false
