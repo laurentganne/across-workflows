@@ -42,11 +42,9 @@ Run this command:
 pip install streamflow
 ```
 
-[OPM Flow](https://opm-project.org/?page_id=19) CWL workflow  exec
-
 ## Run a workflow
 
-The OPM flow workflow is performing the following steps:
+The [OPM Flow](https://opm-project.org/?page_id=19) workflow is performing the following steps:
 * download a dataset at a given URL
 * unzip the dataset
 * run OPM flow in a docker container for a given input deck.
