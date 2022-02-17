@@ -4,7 +4,7 @@ Repository of CWL workflows and [StreamFlow](https://streamflow.di.unito.it/) fi
 
 ## Installation
 
-To run these worflows in a development environment, install the following pre-requisites.
+To run these worflows in a development environment, install the following prerequisites.
 
 ### Python
 
