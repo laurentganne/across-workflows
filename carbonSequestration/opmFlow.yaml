@@ -1,6 +1,6 @@
 version: v1.0
 workflows:
-  opmflow:
+  opmflow_workflow:
     type: cwl
     config:
       file: cwl/workflow.cwl
