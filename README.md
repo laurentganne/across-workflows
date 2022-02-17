@@ -6,6 +6,10 @@ Repository of CWL workflows and [StreamFlow](https://streamflow.di.unito.it/) fi
 
 To run these worflows in a development environment, install the following pre-requisites.
 
+### Python
+
+StreamFlow requires a python version >= 3.8
+
 ### Install docker
 
 See docker documentation, for Ubuntu: https://docs.docker.com/engine/install/ubuntu/
