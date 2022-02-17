@@ -22,6 +22,8 @@ logout and login again.
 
 ### Install unzip
 
+Needed by the workflow we will run below. For example on ubuntu, run:
+
 ```bash
 sudo apt install unzip
 ````
