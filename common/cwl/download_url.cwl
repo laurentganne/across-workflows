@@ -18,4 +18,4 @@ outputs:
   downloaded_file:
     type: File        
     outputBinding:  
-        glob: $(inputs.input_file_name)
+      glob: $(inputs.input_file_name)

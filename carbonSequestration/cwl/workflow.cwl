@@ -43,7 +43,7 @@ steps:
         flow_output:
           type: File[]
           outputBinding:  
-              glob: "output*"
+            glob: "output*"
     in:
       input_files: unzip/unzipped_files
       input_deck_path: input_deck
