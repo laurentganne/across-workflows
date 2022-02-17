@@ -14,7 +14,7 @@ StreamFlow requires a python version >= `3.8`.
 
 See docker documentation, for example on Ubuntu: https://docs.docker.com/engine/install/ubuntu/
 
-Then execute post-installation step to manager docker as a non-root user:
+Then execute a post-installation step to manager docker as a non-root user:
 ```bash
 sudo usermod -aG docker $USER
 ```
@@ -53,7 +53,7 @@ The [OPM Flow](https://opm-project.org/?page_id=19) workflow is performing the f
 * unzip the dataset
 * run OPM flow in a docker container for a given input deck.
 
-Input parameters providing the dataset URL and input deck to used are provided in [carbonSequestration/cwl/config.yaml](carbonSequestration/cwl/config.yaml):
+Input parameters providing the dataset URL and input deck to used are provided in [carbonSequestration/cwl/config.yaml](carbonSequestration/cwl/config.yaml).
 
 To run this workflow, first clone this git repository:
 
