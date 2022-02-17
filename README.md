@@ -12,7 +12,7 @@ StreamFlow requires a python version >= 3.8
 
 ### Install docker
 
-See docker documentation, for Ubuntu: https://docs.docker.com/engine/install/ubuntu/
+See docker documentation, for example on Ubuntu: https://docs.docker.com/engine/install/ubuntu/
 
 Then execute post-installation step to manager docker as a non-root user:
 ```bash
