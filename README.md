@@ -54,6 +54,11 @@ The [OPM Flow](https://opm-project.org/?page_id=19) workflow is performing the f
 * run OPM flow in a docker container for a given input deck.
 
 Input parameters providing the dataset URL and input deck to used are provided in [carbonSequestration/cwl/config.yaml](carbonSequestration/cwl/config.yaml).
+In this example:
+* `dataset_url`: https://github.com/OPM/opm-data/archive
+* `dataset_name`: master.zip
+* `input_deck`: opm-data-master/spe1/SPE1CASE1.DATA
+
 
 To run this workflow, first clone this git repository:
 
