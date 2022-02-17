@@ -8,7 +8,7 @@ To run these worflows in a development environment, install the following pre-re
 
 ### Python
 
-StreamFlow requires a python version >= 3.8
+StreamFlow requires a python version >= `3.8`.
 
 ### Install docker
 
@@ -18,7 +18,7 @@ Then execute post-installation step to manager docker as a non-root user:
 ```bash
 sudo usermod -aG docker $USER
 ```
-logout and login again
+logout and login again.
 
 ### Install unzip
 
